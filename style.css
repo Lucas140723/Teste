@@ -1,0 +1,122 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    background-color: #ffffff; /* Cor de fundo */
+    color: #3e3737; /* Cor do texto */
+    padding: 20px;
+    border-left: 10px solid #041024; /* Borda à esquerda */
+    border-right: 10px solid #041024; /* Borda à direita */
+    border-top: 10px solid #041024;
+    border-bottom: 10px solid #041024;
+
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #2c3e50; /* Cor do título */
+}
+
+
+nav {
+    display: flex; 
+    justify-content: space-between; /* Alinha os itens à direita */
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed;
+    top: 1;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo {
+    height: 50px; /* Ajuste conforme o tamanho desejado */
+    width: auto; /* Mantém a proporção da imagem */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+nav {
+    background-color: #041024;  /* Cor de fundo do menu */
+    padding: 10px;
+    text-align: center;
+    position: fixed; /* Fixa o menu no topo */
+    top: 0; /* Coloca o menu na posição mais alta possível */
+    left: 0;
+    width: 100%; /* Garante que o menu ocupe toda a largura da tela */
+    z-index: 1000; /* Mantém o menu sobre os outros elementos */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: #195fd994; /* Efeito ao passar o mouse */
+    border-radius: 1px;
+}
+
+.hidden {
+    transform: translateY(-100%); /* Move o menu para fora da tela */
+    transition: transform 0.8s ease-in-out;
+}
+
+/* Adiciona um espaçamento no topo para que o conteúdo não fique escondido atrás do menu */
+body {
+    padding-top: 10px; /* Ajuste esse valor conforme a altura do menu */
+}
+
+/* Seção de conteúdo */
+section {
+    text-align: center;
+    background-color: #ffffff; /* Cor do fundo da seção */
+    padding: 10px;
+    border-radius: 0.5px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do botão */
+.botao {
+    padding: 12px 25px;
+    background-color: #041024; /* Cor do botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.botao:hover {
+    background-color: #041024; /* Cor quando o botão é hover */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #041024;
+}
